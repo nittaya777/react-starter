@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "Prompt-Bold";
+  src: url ("/fonts/Prompt-Bold.ttf");
+}
+@font-face {
+  font-family: "Prompt-Medium";
+  src: url ("/fonts/Prompt-Medium.ttf");
+}
+@font-face {
+  font-family: "Prompt-Regular";
+  src: url ("/fonts/Prompt-Regular.ttf");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --primary-color: #584632;
+  --primary-color-dark: #433423;
+  --light-color: #dee2e6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Prompt-Medium";
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title {
+  font-family: "Prompt-Regular";
+}
+.img-logo {
+  height: 70px;
+}
+.text-logo,
+.text-title {
+  color: var(--primary-color);
+}
+.btn-custom {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.btn-custom:hover {
+  background-color: var(--primary-color-dark);
+  color: #fff;
+}
+.bg-main {
+  background-color: #f2f2f0;
+  color: var(--primary-color);
+}
+.product-list {
+  padding: 8px 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.product-list:not(:last-child) {
+  border-bottom: 1px solid var(--light-color);
+}
+.product-list span {
+  flex-grow: 1;
+  text-align: left;
 }
 
-.App-link {
-  color: #61dafb;
+.mt-80 {
+  margin-top: 80px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pd-title {
+  padding: 16px;
+  border-radius: 6px;
+}
+.h1-bold{
+  font-size:80px;
 }
